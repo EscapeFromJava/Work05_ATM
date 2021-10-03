@@ -87,9 +87,13 @@ int main()
 		}
 	}
 	if (cash >= 100) {
-		arrCash[0] = cash / 100;
-		arr[0] -= arrCash[0];
-		cash = cash - arrCash[0] * 100;
+		if (cash / 100 <= arr[0]) {
+			arrCash[0] = cash / 100;
+			arr[0] -= arrCash[0];
+			cash = cash - arrCash[0] * 100;
+		}
+		else cout << "Банкомат не может выдать данную сумму" << endl;
+		exit(0);
 	}
 	if (cash == 0) {
 		cout << endl;
