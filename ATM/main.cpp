@@ -92,12 +92,16 @@ int main()
 			arr[0] -= arrCash[0];
 			cash = cash - arrCash[0] * 100;
 		}
-		else cout << "Банкомат не может выдать данную сумму" << endl;
-		exit(0);
+		else {
+			cout << endl;
+			cout << "Банкомат не может выдать данную сумму" << endl;
+			exit(0);
+		}
 	}
 	if (cash == 0) {
 		cout << endl;
 		cout << "Операция выдачи наличных выполнена успешно!" << endl;
+		cout << endl;
 	}
 	cout << "Выдано: " << arrCash[0] << " ед. по 100 рублей" << endl;
 	cout << "Выдано: " << arrCash[1] << " ед. по 200 рублей" << endl;
