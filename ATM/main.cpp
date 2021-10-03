@@ -31,6 +31,7 @@ int main()
 		}
 		else { //если операция превышает лимит элемента массива, то пересчитываем запрашиваеммую цифру и присваиваем массиву 0
 			cash = cash - arr[5]*5000;
+			arrCash[5] += arr[5];
 			arr[5] = 0;
 		}
 	}
@@ -42,6 +43,7 @@ int main()
 		}
 		else {
 			cash = cash - arr[4]*2000;
+			arrCash[4] += arr[4];
 			arr[4] = 0;
 		}
 	}
@@ -53,6 +55,7 @@ int main()
 		}
 		else {
 			cash = cash - arr[3]*1000;
+			arrCash[3] += arr[3];
 			arr[3] = 0;
 		}
 	}
@@ -64,6 +67,7 @@ int main()
 		}
 		else {
 			cash = cash - arr[2]*500;
+			arrCash[2] += arr[2];
 			arr[2] = 0;
 		}
 	}
@@ -75,6 +79,7 @@ int main()
 		}
 		else {
 			cash = cash - arr[1]*200;
+			arrCash[1] += arr[1];
 			arr[1] = 0;
 		}
 	}
